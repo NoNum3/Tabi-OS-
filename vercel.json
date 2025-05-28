@@ -2,6 +2,7 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "buildCommand": "npm run build",
+  "installCommand": "bun install",
+  "buildCommand": "bun run build",
   "outputDirectory": "dist"
 }
