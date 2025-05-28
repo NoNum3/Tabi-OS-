@@ -6,7 +6,6 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
-slideNo: true
 ---
 
 # Tabi-OS：互動式工具平台
@@ -20,6 +19,10 @@ slideNo: true
   專題學生：B12091202 陳英全
 </div>
 
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
+
 ---
 layout: two-cols
 class: text-sm
@@ -31,6 +34,9 @@ class: text-sm
 ::right::
 
 <Toc minDepth="1" maxDepth="2" />
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 ---
 transition: fade-out
@@ -41,6 +47,10 @@ transition: fade-out
 - <span v-click>現代數位工具普遍存在分散、效率低落的問題，導致用戶需在多平台間頻繁切換，造成操作不便與困擾。</span>
 - <span v-click>Tabi-OS 旨在打造一**開放、模組化且可擴充**的雲端桌面平台。</span>
 - <span v-click><strong>核心目標：</strong>促進協作與創新，同時降低大眾使用與開發者貢獻的門檻。</span>
+
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 ---
 transition: slide-up
@@ -53,6 +63,10 @@ transition: slide-up
   - <span v-click><strong>模組化設計：</strong> 各應用程式獨立存放於 <code>/src/apps/</code>，實現高內聚、低耦合。</span>
   - <span v-click><strong>自動註冊機制：</strong> 新應用可透過 <code>/src/config/appRegistry.ts</code> 自動整合，無需修改全域程式碼，開發者得以專注單一 App 開發。</span>
   - <span v-click><strong>開放架構：</strong> 鼓勵開源精神、促進社群協作與持續創新，打造以社群為核心的現代雲端桌面。</span>
+
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 ---
 transition: slide-right
@@ -68,6 +82,10 @@ transition: slide-right
 - <strong>技術優勢：</strong>
   - <span v-click>SSR (伺服器端渲染) 提升初始載入效能與 SEO，並結合 <code>manifest.json</code> 與結構化 metadata 優化。</span>
   - <span v-click>全面支援無障礙 (a11y) 與多語系 (i18n)，並採用極簡美學設計原則。</span>
+
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 ---
 transition: fade-out
@@ -85,6 +103,10 @@ transition: fade-out
   - <span v-click>重視效能、極簡設計與卓越使用者體驗</span>
   - <span v-click>開源精神，鼓勵社群參與及貢獻</span>
 
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
+
 ---
 transition: slide-right
 ---
@@ -101,6 +123,10 @@ transition: slide-right
 - **程式碼品質：** ESLint, Husky, Commitlint
 - **其他：** Docker, Cloudflare, Google reCAPTCHA, Vercel
 
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
+
 ---
 transition: fade-out
 ---
@@ -113,6 +139,10 @@ transition: fade-out
     - 後端 (資料, 認證): Supabase
 - **模組化設計：** 每個應用程式 (`/src/apps/`) 獨立，高內聚低耦合。
 - **自動發現機制：** 新應用無需修改全域程式碼即可註冊 (`/src/config/appRegistry.ts`)。
+
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 ---
 transition: slide-left
@@ -142,6 +172,9 @@ src/
 ┃  ┗━ ...                       # 其他應用程式
 ```
 ````
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 ---
 transition: slide-right
@@ -164,6 +197,9 @@ src/
 ┃  ┗━ providers/                #   Context 提供者（Theme, Auth, Jotai 等）
 ```
 ````
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 ---
 transition: slide-left
@@ -186,6 +222,9 @@ src/
 ┃  ┗━ utils/                    #   工具函式（如 report.ts、localStorage helpers）
 ```
 ````
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 ---
 transition: slide-right
@@ -206,6 +245,9 @@ src/
    ┗━ api/                      #   API 路由
 ```
 ````
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 ---
 transition: slide-up
@@ -220,6 +262,9 @@ transition: slide-up
 - <span v-click>**持久化狀態：** 如回報冷卻時間，透過 localStorage 記憶。</span>
 - <span v-click>**無障礙 (a11y) 與響應式設計：** 兼顧所有使用者。</span>
 - <span v-click>**雲端同步 (Supabase)：** 支援認證、使用者偏好設定等。</span>
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 --- 
 transition: fade-out
@@ -256,6 +301,9 @@ transition: fade-out
 
 </div>
 </div>
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 --- 
 transition: slide-left
@@ -284,6 +332,9 @@ transition: slide-left
 ```
 <div v-click class="text-sm opacity-75 mt-2">
 此片段展示專案的關鍵依賴與核心腳本，反映了所選用的技術棧與開發流程中的自動化配置 (如 Husky 預提交檢查)。
+</div>
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
 </div>
 
 --- 
@@ -320,6 +371,9 @@ transition: slide-up
 
 </div>
 </div>
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 ---
 transition: slide-right
@@ -333,6 +387,9 @@ transition: slide-right
 </div>
 <div v-click class="mt-2 text-center text-sm opacity-80">
 展示多視窗桌面系統、App Store、工具應用等核心介面。
+</div>
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
 </div>
 
 ---
@@ -353,6 +410,10 @@ transition: fade-out
   - <span v-click>持續優化系統效能、安全性與穩定性</span>
   - <span v-click>擴大開發者社群，完善貢獻文件、教學與流程</span>
 
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
+
 --- 
 transition: slide-up
 ---
@@ -372,6 +433,13 @@ transition: slide-up
 更詳細的貢獻指南與規範，請參閱專案根目錄下的 <code>CONTRIBUTING.md</code> 檔案。
   </div>
 
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
+
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
+</div>
 
 --- 
 transition: zoom-in
@@ -387,5 +455,9 @@ Tabi-OS 期待與您一同成長。
   <a href="https://github.com/NoNum3/tabi-tabi-os-main" target="_blank" rel="noopener noreferrer">
     專案 GitHub
   </a>
+</div>
+
+<div class="absolute right-5 bottom-5 text-sm opacity-80 pointer-events-none select-none">
+  <SlideCurrentNo /> / <SlidesTotal />
 </div>
 

@@ -14,6 +14,7 @@
     "vue": "^3.5.14"
   },
   "devDependencies": {
-    "cwebp-bin": "^8.0.0"
+    "cwebp-bin": "^8.0.0",
+    "playwright-chromium": "^1.52.0"
   }
 }
