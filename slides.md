@@ -47,15 +47,18 @@ transition: slide-up
 
 # 專案緣起與核心理念
 
-- <span v-click><strong>緣起：</strong> 現有工具平台常因封閉或付費模式，限制了用戶的自訂彈性與社群貢獻機會。Tabi-OS 受多工具協作網站啟發，致力於提供更佳解決方案。</span>
-- <span v-click>
-  <strong>核心理念：</strong>
-  <ul class="ml-6">
-    <li><span v-click><strong>模組化設計：</strong> 各應用程式獨立存放於 <code>/src/apps/</code>，實現高內聚、低耦合。</span></li>
-    <li><span v-click><strong>自動註冊機制：</strong> 新應用可透過 <code>/src/config/appRegistry.ts</code> 自動整合，無需修改全域程式碼，開發者得以專注單一 App 開發。</span></li>
-    <li><span v-click><strong>開放架構：</strong> 鼓勵開源精神、促進社群協作與持續創新，打造以社群為核心的現代雲端桌面。</span></li>
-  </ul>
-  </span>
+<div v-click>
+<strong>緣起：</strong> 現有工具平台常因封閉或付費模式，限制了用戶的自訂彈性與社群貢獻機會。Tabi-OS 受多工具協作網站啟發，致力於提供更佳解決方案。
+</div>
+
+<div v-click class="mt-4">
+<strong>核心理念：</strong>
+<ul class="ml-6">
+  <li v-click><strong>模組化設計：</strong> 各應用程式獨立存放於 <code>/src/apps/</code>，實現高內聚、低耦合。</li>
+  <li v-click><strong>自動註冊機制：</strong> 新應用可透過 <code>/src/config/appRegistry.ts</code> 自動整合，無需修改全域程式碼，開發者得以專注單一 App 開發。</li>
+  <li v-click><strong>開放架構：</strong> 鼓勵開源精神、促進社群協作與持續創新，打造以社群為核心的現代雲端桌面。</li>
+</ul>
+</div>
 
 ---
 transition: slide-right
@@ -63,22 +66,26 @@ transition: slide-right
 
 # 主要目標功能規劃
 
-- <span v-click><strong>平台目標：</strong> 建立穩健、高效能且可擴充的雲端桌面環境，基於 Next.js、React 及 Supabase。</span>
-- <span v-click>
-  <strong>核心功能：</strong>
-  <ul class="ml-6">
-    <li><span v-click>整合多種實用工具 (如書籤、音樂播放器、計算機、記事本、天氣查詢等)。</span></li>
-    <li><span v-click>App Store：提供使用者探索、安裝、移除應用程式的介面，實現個人化桌面。</span></li>
-    <li><span v-click>多視窗系統：模擬真實作業系統的操作邏輯與體驗。</span></li>
-  </ul>
-  </span>
-- <span v-click>
-  <strong>技術優勢：</strong>
-  <ul class="ml-6">
-    <li><span v-click>SSR (伺服器端渲染) 提升初始載入效能與 SEO，並結合 <code>manifest.json</code> 與結構化 metadata 優化。</span></li>
-    <li><span v-click>全面支援無障礙 (a11y) 與多語系 (i18n)，並採用極簡美學設計原則。</span></li>
-  </ul>
-  </span>
+<div v-click>
+<strong>平台目標：</strong> 建立穩健、高效能且可擴充的雲端桌面環境，基於 Next.js、React 及 Supabase。
+</div>
+
+<div v-click class="mt-4">
+<strong>核心功能：</strong>
+<ul class="ml-6">
+  <li v-click>整合多種實用工具 (如書籤、音樂播放器、計算機、記事本、天氣查詢等)。</li>
+  <li v-click>App Store：提供使用者探索、安裝、移除應用程式的介面，實現個人化桌面。</li>
+  <li v-click>多視窗系統：模擬真實作業系統的操作邏輯與體驗。</li>
+</ul>
+</div>
+
+<div v-click class="mt-4">
+<strong>技術優勢：</strong>
+<ul class="ml-6">
+  <li v-click>SSR (伺服器端渲染) 提升初始載入效能與 SEO，並結合 <code>manifest.json</code> 與結構化 metadata 優化。</li>
+  <li v-click>全面支援無障礙 (a11y) 與多語系 (i18n)，並採用極簡美學設計原則。</li>
+</ul>
+</div>
 
 ---
 transition: fade-out
@@ -102,15 +109,15 @@ transition: slide-right
 
 # 技術棧
 
-- **核心框架：** Next.js (v15.x), React (v19.x)
-- **語言：** TypeScript (v5.x)
-- **狀態管理：** Jotai (原子化、可擴展)
-- **樣式：** Tailwind CSS (v4.x)
-- **UI 元件：** Radix UI, shadcn/ui
-- **後端/資料庫：** Supabase (PostgreSQL, Auth, RLS)
-- **套件管理/執行環境：** Bun (v1.x)
-- **程式碼品質：** ESLint, Husky, Commitlint
-- **其他：** Docker, Cloudflare, Google reCAPTCHA, Vercel
+- <span v-click><strong>核心框架：</strong> Next.js (v15.x), React (v19.x)</span>
+- <span v-click><strong>語言：</strong> TypeScript (v5.x)</span>
+- <span v-click><strong>狀態管理：</strong> Jotai (原子化、可擴展)</span>
+- <span v-click><strong>樣式：</strong> Tailwind CSS (v4.x)</span>
+- <span v-click><strong>UI 元件：</strong> Radix UI, shadcn/ui</span>
+- <span v-click><strong>後端/資料庫：</strong> Supabase (PostgreSQL, Auth, RLS)</span>
+- <span v-click><strong>套件管理/執行環境：</strong> Bun (v1.x)</span>
+- <span v-click><strong>程式碼品質：</strong> ESLint, Husky, Commitlint</span>
+- <span v-click><strong>其他：</strong> Docker, Cloudflare, Google reCAPTCHA, Vercel</span>
 
 ---
 transition: fade-out
@@ -119,11 +126,11 @@ transition: fade-out
 # 系統架構與資料夾結構
 
 ## 架構概述
-- **前後端分離：**
+- <span v-click><strong>前後端分離：</strong>
     - 前端 (UI/UX, 狀態): Next.js, React, Jotai
-    - 後端 (資料, 認證): Supabase
-- **模組化設計：** 每個應用程式 (`/src/apps/`) 獨立，高內聚低耦合。
-- **自動發現機制：** 新應用無需修改全域程式碼即可註冊 (`/src/config/appRegistry.ts`)。
+    - 後端 (資料, 認證): Supabase</span>
+- <span v-click><strong>模組化設計：</strong> 每個應用程式 (<code>/src/apps/</code>) 獨立，高內聚低耦合。</span>
+- <span v-click><strong>自動發現機制：</strong> 新應用無需修改全域程式碼即可註冊 (<code>/src/config/appRegistry.ts</code>)。</span>
 
 ---
 transition: slide-left
@@ -353,16 +360,22 @@ transition: fade-out
 # 未來展望
 
 - **功能擴展：**
-  - <span v-click>支援更多第三方應用程式與插件系統</span>
-  - <span v-click>新增通知中心、日曆、即時聊天等核心應用</span>
-  - <span v-click>儀表板個人化自訂功能</span>
+  <ul class="ml-6">
+    <li v-click>支援更多第三方應用程式與插件系統</li>
+    <li v-click>新增通知中心、日曆、即時聊天等核心應用</li>
+    <li v-click>儀表板個人化自訂功能</li>
+  </ul>
 - **體驗優化：**
-  - <span v-click>強化雲端同步機制與可能的離線支援</span>
-  - <span v-click>行動裝置使用者體驗深度優化與適配</span>
+  <ul class="ml-6">
+    <li v-click>強化雲端同步機制與可能的離線支援</li>
+    <li v-click>行動裝置使用者體驗深度優化與適配</li>
+  </ul>
 - **生態建設：**
-  - <span v-click>擴展 API 接口，支援外部自動化與深度整合</span>
-  - <span v-click>持續優化系統效能、安全性與穩定性</span>
-  - <span v-click>擴大開發者社群，完善貢獻文件、教學與流程</span>
+  <ul class="ml-6">
+    <li v-click>擴展 API 接口，支援外部自動化與深度整合</li>
+    <li v-click>持續優化系統效能、安全性與穩定性</li>
+    <li v-click>擴大開發者社群，完善貢獻文件、教學與流程</li>
+  </ul>
 
 --- 
 transition: slide-up
@@ -371,13 +384,17 @@ transition: slide-up
 # 如何貢獻 (簡要)
 
 - **新增 App：**
-  - <span v-click>於 <code>/src/apps/</code> 建立新資料夾 (建議 kebab-case 命名)</span>
-  - <span v-click>需包含 <code>index.ts</code> (主出口), <code>config.ts</code> (視窗配置), <code>README.md</code> (說明)</span>
-  - <span v-click>App 將透過自動發現機制註冊至系統</span>
+  <ul class="ml-6">
+    <li v-click>於 <code>/src/apps/</code> 建立新資料夾 (建議 kebab-case 命名)</li>
+    <li v-click>需包含 <code>index.ts</code> (主出口), <code>config.ts</code> (視窗配置), <code>README.md</code> (說明)</li>
+    <li v-click>App 將透過自動發現機制註冊至系統</li>
+  </ul>
 - **翻譯：**
-  - <span v-click>平台層級翻譯：<code>/src/locales/</code></span>
-  - <span v-click>應用程式翻譯：<code>/src/apps/[appName]/locales/</code></span>
-- **其他：** 歡迎透過 GitHub Issues 回報錯誤、提出功能建議、或協助改進文件。
+  <ul class="ml-6">
+    <li v-click>平台層級翻譯：<code>/src/locales/</code></li>
+    <li v-click>應用程式翻譯：<code>/src/apps/[appName]/locales/</code></li>
+  </ul>
+- <span v-click>**其他：** 歡迎透過 GitHub Issues 回報錯誤、提出功能建議、或協助改進文件。</span>
 
 <div v-click class="mt-4 text-sm opacity-75">
 更詳細的貢獻指南與規範，請參閱專案根目錄下的 <code>CONTRIBUTING.md</code> 檔案。
