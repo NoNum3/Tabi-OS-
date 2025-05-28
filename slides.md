@@ -6,6 +6,7 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
+slideNo: true
 ---
 
 # Tabi-OS：互動式工具平台
@@ -371,15 +372,6 @@ transition: slide-up
 更詳細的貢獻指南與規範，請參閱專案根目錄下的 <code>CONTRIBUTING.md</code> 檔案。
   </div>
 
---- 
-transition: slide-right
----
-
-# Q & A
-
-<div class="text-xl opacity-80 mt-8">
-感謝您的聆聽，歡迎提問！
-</div>
 
 --- 
 transition: zoom-in
